@@ -1,3 +1,14 @@
+---
+title: FraudGuard AI
+emoji: 🛡️
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: "1.44.0"
+app_file: app.py
+pinned: false
+---
+
 # FraudGuard AI — Fraud Investigation Copilot
 
 FraudGuard AI is a production-style machine learning web application that detects suspicious financial transactions, assigns fraud risk scores, explains risky behaviour, and generates investigation reports.
