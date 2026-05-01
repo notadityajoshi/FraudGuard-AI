@@ -1,20 +1,49 @@
-# FraudGuard AI
+# FraudGuard AI — Fraud Investigation Copilot
 
-FraudGuard AI is a production-style AI Fraud Investigation Copilot.
+FraudGuard AI is a production-style machine learning web application that detects suspicious financial transactions, assigns fraud risk scores, explains risky behaviour, and generates investigation reports.
 
-The system will allow users to upload transaction data, detect suspicious activity, view fraud risk scores, understand why transactions are risky, chat with the data, and export an investigation report.
+## What It Does
+
+- Upload transaction CSV files
+- Predict fraud probability
+- Classify transactions as Low, Medium, or High risk
+- Display suspicious transactions in a dashboard
+- Explain why transactions may be risky
+- Generate an investigation summary
+- Export suspicious transactions and reports
 
 ## Tech Stack
 
 - Python
 - Pandas
 - Scikit-learn
+- XGBoost
 - FastAPI
 - Streamlit
+- Joblib
 - Docker
 - GitHub
-- Deployment
+- Hugging Face Spaces
 
-## Project Status
+## Machine Learning Approach
 
-Phase 0 setup completed.
+The model is trained on a public credit card fraud dataset. Because fraud is rare, the project handles class imbalance and evaluates performance using:
+
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+- Confusion Matrix
+
+## Architecture
+
+```text
+User Uploads CSV
+        ↓
+Streamlit Frontend
+        ↓
+Fraud Detection Model
+        ↓
+Risk Scores + Explanations
+        ↓
+Dashboard + Report Export

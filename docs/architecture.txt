@@ -1,0 +1,27 @@
+FraudGuard AI Architecture
+
+[User]
+  |
+  | Upload CSV
+  v
+[Streamlit Web App]
+  |
+  | Loads saved model
+  v
+[Fraud Detection ML Model]
+  |
+  | Predicts fraud probability
+  v
+[Risk Scoring Engine]
+  |
+  | Adds Low / Medium / High risk
+  v
+[Explanation Layer]
+  |
+  | Generates reasons and summary
+  v
+[Dashboard + Export System]
+  |
+  | CSV + TXT report
+  v
+[Fraud Investigator / Recruiter Demo]
